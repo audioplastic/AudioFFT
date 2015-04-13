@@ -161,6 +161,13 @@ public:
   {
     return (size / 2) + 1;
   }
+    
+    
+  /// Added by nick - inverse of complex size
+  static size_t RealSize(size_t size)
+  {
+    return (size-1)*2;
+  }
   
 private:
   AudioFFTBase(const AudioFFTBase&);
